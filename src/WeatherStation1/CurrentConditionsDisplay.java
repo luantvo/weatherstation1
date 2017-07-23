@@ -7,13 +7,15 @@ public class CurrentConditionsDisplay {
 	 
 	   public CurrentConditionsDisplay(WeatherData weatherData) {     
 		   this.weatherData = weatherData;     
-		   weatherData.setConditionDisplay(this);   
+		   weatherData.setConditionDisplay(this);
+		   var luanvo;
+		   luanvo = 1;
 		   } 
 	 
 	   public void update(float temperature, float humidity, float pressure) {     
 		   this.temperature = temperature;      
 		   this.humidity = humidity;      
-		   display();   
+		   display();
 		   } 
 	 
 	   public void display() {       System.out.println("Current conditions: " + temperature             + "F degrees and " + humidity + "% humidity");   
